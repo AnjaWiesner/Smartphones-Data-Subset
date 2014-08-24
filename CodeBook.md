@@ -1,6 +1,14 @@
 Data Dictionary
 Coursera - Getting and Cleaning Data Course Project 
 
+Data Set Information:
+
+  A group of 30 volunteers performed 6 activies (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing   a Samsung Galaxy S II on the waist.
+  The accelerometer and gyroscope of the smartphone were used to capture acceleration and velocity. A feature vector with time and   frequency domain variables was computed from the data.
+  This 561-element vector was the basis for our data set.
+
+Attribute Information:
+
 activityID
   Integer: 1-6
 
