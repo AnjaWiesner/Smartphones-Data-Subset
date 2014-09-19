@@ -104,3 +104,6 @@ fBodyBodyGyroJerkMag-mean()
 fBodyBodyGyroJerkMag-std()      
 fBodyBodyGyroJerkMag-meanFreq()
    
+Tidy Data Set:
+
+For the resulting tidy data set, the mean of all data points for the same subject and activity were calculated and aggregated into a table with 180 rows and 81 columns.
