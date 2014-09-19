@@ -26,15 +26,31 @@ names(test[grep("mean|std",features[,2])])
 #merge training and test set into one data set
 mergeTest <- cbind(test[meanStdCols],testLabels,subjectTest)
 mergeTrain <- cbind(train[meanStdCols],trainLabels,subjectTrain)
-
 mergedReduced <- rbind(mergeTest,mergeTrain)
-names(mergedReduced)
 
 #need to add activity labels to the data according to V1/activityID 
 finalDF = merge(mergedReduced,activities)
 dim(finalDF)
-names(finalDF)
-tail(finalDF,n=1)
 
-write.table(finalDF,"tidy.txt",row.names=FALSE)
+
+#factorize variables
+finalDF$activityID <- as.factor(finalDF$activityID)
+finalDF$subjectID <- as.factor(finalDF$subjectID)
+ 
+#tidy the data 
+#new data set contains 180 columns (subjects * activities)
+tidy = aggregate(finalDF, by=list(activity = finalDF$activityID, subject=finalDF$subjectID), mean)
+
+dim(tidy)
+
+#remove NA columns
+tidy[,3] = NULL
+tidy[,82] = NULL
+tidy[,82] = NULL
+tidy[,82] = NULL
+
+dim(tidy)
+
+write.table(tidy,"tidy.txt",row.names=FALSE)
+
 
