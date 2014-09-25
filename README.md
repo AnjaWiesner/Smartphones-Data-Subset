@@ -2,7 +2,7 @@ Smartphones-Data-Subset
 =======================
 
 This work uses data from the Human Activity Recognition Using Smartphones Dataset by Smartlab, Genova (Italy).
-The experiments conducted with 30 volunteers aimed at gathering sensor signals from the accelorometer and gyroscope of the Samsung Galaxy S Smartphone.
+The experiments conducted with 30 volunteers aimed at gathering sensor signals from the accelerometer and gyroscope of the Samsung Galaxy S Smartphone.
 Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing the smartphone on the waist. 
 
 For our data subset we do not use the actual acceleration and velocity mesurements but the data computed into a feature vector with 561 time and frequency domain variables. 
