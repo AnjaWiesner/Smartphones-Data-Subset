@@ -13,7 +13,7 @@ We extracted only the 79 features on the mean and standard deviation (including 
 Download
 --------
 
-You need to download the R script run_analysis.R, which contains the main function body. Also you need to download the data from the website () and put it into a folder together with the R script. 
+You need to download the R script run_analysis.R, which contains the main function body. Also you need to download the data from the website (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and put it into a folder together with the R script. 
 
 run_analysis.R
 --------------
